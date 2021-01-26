@@ -1,4 +1,4 @@
-# [RETROPIL](https://github.com/mtbradley/retropil)
+# RETROPIL
 ---
 
 ### Batch generate retro pop art, pixel art and ascii art from images/photographs using Python PIL and numpy.
@@ -42,9 +42,12 @@ ASCII Art images with Python PIL
 
 - [dog.jpg - Photo by Charles Deluvio](https://unsplash.com/@charlesdeluvio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
-- [car.jpg - Photo by Alex Rainer](https://unsplash.com/@alex_rainer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+- [car.jpg - Photo by Martin Katler](https://unsplash.com/@martinkatler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+
+- [cat.jpg - Photo by Alex Rainer](https://unsplash.com/@alex_rainer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
 
 - [eagle.jpg - Photo by tof Mayanoff](https://unsplash.com/@mayanoff?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)  
 
+---
 
-## [RETROPIL REPO](https://github.com/mtbradley/retropil)
+<a href="https://github.com/mtbradley/retropil"> Link to RETROPIL Repo.</a>
