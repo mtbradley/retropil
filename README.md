@@ -3,6 +3,8 @@
 
 ### Batch generate retro pop art, pixel art and ascii art from images/photographs using Python PIL and numpy.
 
+![Sample Output Image](samples.jpg?raw=true)
+
 ### Usage:
 
 Refer to main() function in retropil.py for usage examples. Sample generated images are located in the `output` folder. There are also examples of how to change the default Class variables.
