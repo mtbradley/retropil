@@ -1,4 +1,4 @@
-# RETROPIL
+# [RETROPIL](https://github.com/mtbradley/retropil)
 ---
 
 ### Batch generate retro pop art, pixel art and ascii art from images/photographs using Python PIL and numpy.
@@ -7,11 +7,11 @@
 
 ### Usage:
 
-Refer to main() function in retropil.py for usage examples. Sample generated images are located in the `output` folder. There are also examples of how to change the default Class variables.
+Refer to main() function in [retropil.py](./retropil.py) for usage examples. Sample generated images are located in the `output` folder. There are also examples of how to change the default Class variables.
 
-- Clone the repo
-- Edit retropil.py and use one of the examples. Either specify an individual image path or put your images in the `input` folder and use the batch generation example.
-- Run `python3 retropil.py`
+1. Clone the repo `git clone https://github.com/mtbradley/retropil.git`
+2. Edit retropil.py and use one of the examples. Either specify an individual image path or put your images in the `input` folder and use the batch generation example.
+3. Run `python3 retropil.py`
 
 
 ### Code Credit / References:
@@ -46,3 +46,5 @@ ASCII Art images with Python PIL
 
 - [eagle.jpg - Photo by tof Mayanoff](https://unsplash.com/@mayanoff?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)  
 
+
+## [RETROPIL REPO](https://github.com/mtbradley/retropil)
