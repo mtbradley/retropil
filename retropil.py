@@ -57,39 +57,39 @@ class RetroImage:
         input_image.save(filename)
         print(f'Saved file: {filename}', end="\n", flush=True)
 
-    def resizer(self, ascii_working_image, set_antialias=False):
+    def resizer(self, input_image, set_antialias=False):
         if set_antialias:
             scale_method = 'Image.ANTIALIAS'
         else:
             scale_method = 'Image.NEAREST'
         # Resize image depending on fixed value and maintain aspect ratio
-        ascii_working_image_width, ascii_working_image_height = ascii_working_image.size
+        input_image_width, input_image_height = input_image.size
         if self.fixed_width:
             # If a fixed width has been set, image width will be set to self.fixed_width.
-            wpercent = (self.fixed_width/float(ascii_working_image_width))
-            hsize = int((float(ascii_working_image_height)*float(wpercent)))
-            output_image = ascii_working_image.resize(
+            wpercent = (self.fixed_width/float(input_image_width))
+            hsize = int((float(input_image_height)*float(wpercent)))
+            output_image = input_image.resize(
                 (self.fixed_width, hsize), eval(scale_method))
         elif self.fixed_height:
             # If a fixed height has been set, image height will be set to: self.fixed_height.
-            hpercent = (self.fixed_height/float(ascii_working_image_height))
-            wsize = int((float(ascii_working_image_width)*float(hpercent)))
-            output_image = ascii_working_image.resize(
+            hpercent = (self.fixed_height/float(input_image_height))
+            wsize = int((float(input_image_width)*float(hpercent)))
+            output_image = input_image.resize(
                 (wsize, self.fixed_height), eval(scale_method))
         elif self.fixed_size:
             # If self.fixed_size is set the largest side of the image will be set to self.fixed_size
-            if ascii_working_image_height == max(ascii_working_image_height, ascii_working_image_width):
+            if input_image_height == max(input_image_height, input_image_width):
                 # if input image is landscape, width will be set to: self.fixed_size.
-                hpercent = (self.fixed_size/float(ascii_working_image_height))
-                wsize = int((float(ascii_working_image_width)*float(hpercent)))
-                output_image = ascii_working_image.resize(
+                hpercent = (self.fixed_size/float(input_image_height))
+                wsize = int((float(input_image_width)*float(hpercent)))
+                output_image = input_image.resize(
                     (wsize, self.fixed_size), eval(scale_method))
             else:
                 # If input image is portrait, height will be set to: self.fixed_size.
-                wpercent = (self.fixed_size/float(ascii_working_image_width))
+                wpercent = (self.fixed_size/float(input_image_width))
                 hsize = int(
-                    (float(ascii_working_image_height)*float(wpercent)))
-                output_image = ascii_working_image.resize(
+                    (float(input_image_height)*float(wpercent)))
+                output_image = input_image.resize(
                     (self.fixed_size, hsize), eval(scale_method))
         return output_image
 
@@ -304,6 +304,7 @@ def main():
     # new_image.asciiart()
 
     # Example 2. - use for batch processing a folder/directory of image files
+    # Example runs all three generators on all files in the input folder.
     batch_images = glob(f'input/*.jpg') + glob(f'input/*.png')
     for image in batch_images:
         new_image = RetroImage(image)
